@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer'
 import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig({
+  base: '/vite-muti-page-app/',
   root: './src/pages',
 
   build: {
