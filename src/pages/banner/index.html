@@ -5,6 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    /* 测试autoprefixer */
+    button {
+      display: flex;
+      background: linear-gradient(#e98a00, #f5aa2f);
+    }
+
+    ::placeholder {
+      color: gray;
+    }
+
+    .image {
+      background-image: url(image@1x.png);
+    }
+
+    @media (min-resolution: 2dppx) {
+      .image {
+        background-image: url(image@2x.png);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -12,17 +34,7 @@
 
   <button>navigate</button>
 
-  <script type="module">
-    import $ from "jquery";
-
-    $(() => {
-      console.log('banner');
-
-      $('button').on('click', () => {
-        window.location.href = `/home/index.html`
-      })
-    })
-  </script>
+  <script type="module" src="./main.js"></script>
 </body>
 
 </html>
