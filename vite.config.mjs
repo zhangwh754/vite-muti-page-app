@@ -1,8 +1,9 @@
-import { resolve } from 'path'
+import path from 'path'
 import { defineConfig } from 'vite'
 import eslint from 'vite-plugin-eslint'
 import autoprefixer from 'autoprefixer'
 import legacy from '@vitejs/plugin-legacy'
+import getInputModule from './src/config/getInputModule'
 
 export default defineConfig(function ({ mode }) {
   return {
@@ -10,12 +11,9 @@ export default defineConfig(function ({ mode }) {
     root: './src/pages',
 
     build: {
-      outDir: resolve(process.cwd(), 'build'), // 指定输出路径（相对于 项目根目录)
+      outDir: path.resolve(process.cwd(), 'build'), // 指定输出路径（相对于 项目根目录)
       rollupOptions: {
-        input: {
-          home: resolve(__dirname, './src/pages/home/index.html'),
-          banner: resolve(__dirname, './src/pages/banner/index.html'),
-        },
+        input: getInputModule(),
       },
     },
 
