@@ -1,0 +1,19 @@
+{
+  "name": "vite-entries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
