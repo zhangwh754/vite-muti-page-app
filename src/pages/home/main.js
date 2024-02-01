@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 $(() => {
   // const num = 0;
 

@@ -2,3 +2,4 @@
 build
 node_modules
 vite.config.mjs
+auto-imports.d.ts
