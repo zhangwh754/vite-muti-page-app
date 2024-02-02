@@ -13,8 +13,10 @@
   },
   "rules": {
     "no-console": "off",
+    "no-new": "off",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off"
   },
   "globals": {
     "$": "readonly"
