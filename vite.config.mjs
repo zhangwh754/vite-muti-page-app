@@ -24,6 +24,12 @@ export default defineConfig(function ({ mode }) {
       },
     },
 
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+      },
+    },
+
     plugins: [
       eslint({
         cache: false,

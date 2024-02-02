@@ -11,7 +11,8 @@ $(() => {
     const list = $('.list')
 
     JSON.parse(res)
-      .data.map(item => ({
+      .data.slice(0, 10)
+      .map(item => ({
         title: item.title,
         hot: item.hot,
         url: item.url,

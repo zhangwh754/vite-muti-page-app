@@ -26,15 +26,32 @@
         background-image: url(image@2x.png);
       }
     }
+
+    .test_img,
+    .test_img2 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
   </style>
 </head>
 
 <body>
   <h2>Banner</h2>
 
+  <img class="test_img" src="" alt="葫芦娃">
+  <img class="test_img2" src="" alt="头像">
+
   <button>navigate</button>
 
   <script type="module" src="./main.js"></script>
+  <script type="module">
+    import testImg from '@/assets/test_img.jpg'
+    import testImg2 from '@/assets/avatar.jpg'
+
+    $('.test_img').attr('src', testImg)
+    $('.test_img2').attr('src', testImg2)
+  </script>
 </body>
 
 </html>
