@@ -6,6 +6,8 @@ import legacy from '@vitejs/plugin-legacy'
 import AutoImport from 'unplugin-auto-import/vite'
 import getInputModule from './src/config/getInputModule'
 
+console.log('getInputModule', getInputModule())
+
 export default defineConfig(function ({ mode }) {
   return {
     // base: mode === 'production' ? '/vite-muti-page-app/' : '/',

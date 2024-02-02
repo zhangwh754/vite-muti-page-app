@@ -4,9 +4,17 @@ import 'swiper/css/bundle'
 $(() => {
   console.log('banner')
 
-  $('button').on('click', () => {
-    window.location.href = `../home/index.html`
-  })
+  $('button')
+    .eq(0)
+    .on('click', () => {
+      window.location.href = `../home/index.html`
+    })
+
+  $('button')
+    .eq(1)
+    .on('click', () => {
+      window.location.href = `../home/hello/fuck.html`
+    })
 
   new Swiper('.swiper', {
     // Optional parameters
