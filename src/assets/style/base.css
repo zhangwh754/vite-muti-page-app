@@ -1,0 +1,17 @@
+@import 'normalize.css';
+@import './media.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}

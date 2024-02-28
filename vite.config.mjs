@@ -1,7 +1,6 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import eslint from 'vite-plugin-eslint'
-import autoprefixer from 'autoprefixer'
 import legacy from '@vitejs/plugin-legacy'
 import AutoImport from 'unplugin-auto-import/vite'
 import getInputModule from './src/config/getInputModule'
@@ -10,19 +9,12 @@ console.log('getInputModule', getInputModule())
 
 export default defineConfig(function ({ mode }) {
   return {
-    // base: mode === 'production' ? '/vite-muti-page-app/' : '/',
-    root: './src/pages',
+    // root: './src/pages',
 
     build: {
       outDir: path.resolve(process.cwd(), 'build'), // 指定输出路径（相对于 项目根目录)
       rollupOptions: {
         input: getInputModule(),
-      },
-    },
-
-    css: {
-      postcss: {
-        plugins: [autoprefixer()],
       },
     },
 

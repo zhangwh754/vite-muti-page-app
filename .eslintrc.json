@@ -16,7 +16,8 @@
     "no-new": "off",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "import/no-unresolved": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "func-names": "off"
   },
   "globals": {
     "$": "readonly"
