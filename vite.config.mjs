@@ -9,7 +9,7 @@ console.log('getInputModule', getInputModule())
 
 export default defineConfig(function ({ mode }) {
   return {
-    // root: './src/pages',
+    root: './src/pages',
 
     build: {
       outDir: path.resolve(process.cwd(), 'build'), // 指定输出路径（相对于 项目根目录)
